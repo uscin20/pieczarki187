@@ -14,43 +14,7 @@
     <div class="title">Galeria Pieczarki LAMA187</div>
 </div>
 
-    <div id="countdown" style="font-size: 40px; margin: 10px; text-align:center;">Ładowanie...</div>
-
-    <script>
-      // Ustaw datę i godzinę, do której ma być odliczanie
-      const targetDate = new Date("2026-07-24T19:00:00"); // Przykład: 31 grudnia 2025, godz. 23:59:59
-
-      function updateCountdown() {
-        const now = new Date();
-        const timeRemaining = targetDate - now;
-
-        if (timeRemaining <= 0) {
-          clearInterval(countdownInterval);
-          document.getElementById("countdown").textContent = "Galeria zostanie wkrótce otwarta!";
-          return;
-        }
-
-        // Obliczanie dni, godzin, minut i sekund
-        const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
-        const hours = Math.floor(
-          (timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-        );
-        const minutes = Math.floor(
-          (timeRemaining % (1000 * 60 * 60)) / (1000 * 60)
-        );
-        const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
-
-        // Wyświetlanie odliczania w odpowiednim formacie
-        document.getElementById(
-          "countdown"
-        ).textContent = `${days} dni ${hours} godz. ${minutes} min ${seconds} sek`;
-      }
-
-      // Ustaw interwał, aby odliczanie było aktualizowane co sekundę
-      const countdownInterval = setInterval(updateCountdown, 1000);
-    </script>
-
-    <!--
+ 
 <div class="main">
     
     <img src="DSC_0006 (Large).JPG" alt="">
@@ -132,7 +96,7 @@
     <img src="DSC_1158 (Large).JPG" alt="">
     <img src="DSC_1197 (Large).JPG" alt="b">
 
-</div> -->
+</div>
 <script src="script.js"></script>
 <div class="footer">
     © 2026 Wiktor Uścinowicz
